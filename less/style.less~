@@ -554,7 +554,19 @@ body {
 }
 
 .category-item {
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+
 	.select {
 		line-height:55px;
 	}
+}
+
+.home .category-item .category-header
+{
+	text-align: left;
+	padding: 10px 15px;
+	min-height: 0;
+	display: flex;
 }

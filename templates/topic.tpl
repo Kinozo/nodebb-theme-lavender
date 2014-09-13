@@ -74,7 +74,7 @@
 								<small class="pull-right">
 									<span>
 										<!-- IF posts.user.userslug -->
-										<i class="fa fa-circle status offline"></i>
+										<i class="fa fa-circle status {posts.user.status}" title='[[global:{posts.user.status}]]'></i>
 										<!-- ENDIF posts.user.userslug -->
 										<span class="username-field" data-username="{posts.user.username}">
 											<!-- IF posts.user.userslug -->
@@ -133,9 +133,11 @@
 									<i class="fa fa-chevron-up"></i>
 								</a>
 								<span class="votes" data-votes="{posts.votes}">{posts.votes}</span>
+								<!-- IF !downvote:disabled -->
 								<a href="#" class="downvote <!-- IF posts.downvoted --> downvoted btn-primary <!-- ENDIF posts.downvoted -->">
 									<i class="fa fa-chevron-down"></i>
 								</a>
+								<!-- ENDIF !downvote:disabled -->
 								<!-- ENDIF !reputation:disabled -->
 
 								<!-- IF posts.user.custom_profile_info.length -->

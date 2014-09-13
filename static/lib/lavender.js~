@@ -28,7 +28,7 @@ $('document').ready(function() {
 							$('.category-item[data-cid="' + cid + '"]').css({
 								left: category.left,
 								top: category.top,
-								position: 'absolute'
+								position: 's'
 							});
 						}
 					}
