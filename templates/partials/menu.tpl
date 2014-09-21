@@ -49,6 +49,11 @@
 							<i class="fa fa-fw fa-cubes"></i><span class="visible-xs-inline"> [[global:header.popular]]</span>
 						</a>
 					</li>
+					<li>
+						<a href="{relative_path}/groupchat" title="[[global:header.groupchat]]">
+							<i class="fa fa-fw fa-comments"></i><span class="visible-xs-inline"> [[global:header.popular]]</span>
+						</a>
+					</li>
 					<!-- ENDIF loggedIn -->
 					<li>
 						<!-- IF function.displayUsersLink -->
